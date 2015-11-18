@@ -22,7 +22,11 @@ namespace CountDown
             long i = 0;            
             while ((buf[i] >> 14)==10 &&  ++i < buf.Length) ;
             stream.Seek(pos + i, System.IO.SeekOrigin.Begin);
-            string str = reader.ReadLine();
+            string str = "";
+            for (int k = 0; k < 5; k++)
+            {
+                str += reader.ReadLine()+"\n";
+            }
             return str;
         }
     }

@@ -40,8 +40,8 @@
             this.aboutCountDownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tEXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.randomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.slideShow = new SlideShow.SlideShow();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.slideShow = new SlideShow.SlideShow();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,9 +67,9 @@
             this.messageText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.messageText.Enabled = false;
             this.messageText.Font = new System.Drawing.Font("Meiryo", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageText.Location = new System.Drawing.Point(12, 685);
+            this.messageText.Location = new System.Drawing.Point(12, 619);
             this.messageText.Name = "messageText";
-            this.messageText.Size = new System.Drawing.Size(578, 102);
+            this.messageText.Size = new System.Drawing.Size(578, 289);
             this.messageText.TabIndex = 2;
             this.messageText.Text = "";
             // 
@@ -128,9 +128,16 @@
             // randomToolStripMenuItem
             // 
             this.randomToolStripMenuItem.Name = "randomToolStripMenuItem";
-            this.randomToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.randomToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.randomToolStripMenuItem.Text = "&Random";
             this.randomToolStripMenuItem.Click += new System.EventHandler(this.randomToolStripMenuItem_Click);
+            // 
+            // openFileToolStripMenuItem
+            // 
+            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
+            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
+            this.openFileToolStripMenuItem.Text = "&Open File";
+            this.openFileToolStripMenuItem.Click += new System.EventHandler(this.openFileToolStripMenuItem_Click);
             // 
             // slideShow
             // 
@@ -139,25 +146,18 @@
             this.slideShow.Size = new System.Drawing.Size(600, 570);
             this.slideShow.TabIndex = 4;
             // 
-            // openFileToolStripMenuItem
-            // 
-            this.openFileToolStripMenuItem.Name = "openFileToolStripMenuItem";
-            this.openFileToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.openFileToolStripMenuItem.Text = "&Open File";
-            this.openFileToolStripMenuItem.Click += new System.EventHandler(this.openFileToolStripMenuItem_Click);
-            // 
             // CountDown
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 824);
+            this.ClientSize = new System.Drawing.Size(602, 915);
             this.Controls.Add(this.slideShow);
             this.Controls.Add(this.messageText);
             this.Controls.Add(this.TimeText);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(620, 869);
+            this.MaximumSize = new System.Drawing.Size(620, 1100);
             this.MinimumSize = new System.Drawing.Size(620, 869);
             this.Name = "CountDown";
             this.Text = "CountDown";
