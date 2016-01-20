@@ -40,8 +40,17 @@ namespace CountDown
             DateTime now = DateTime.Now;
             DateTime endTime = new DateTime(now.Year, now.Month, now.Day, 17, 30, 0);
 
-            TimeSpan diff = endTime - now;            
-            TimeText.Text = new DateTime(diff.Ticks).ToString("HH:mm:ss");
+            TimeSpan diff = endTime - now;  
+            if(diff<TimeSpan.Zero)
+            {
+                diff = diff.Negate();
+                TimeText.Text = "+";
+            }
+            else
+            {
+                TimeText.Text = "-";
+            }
+            TimeText.Text += new DateTime(diff.Ticks).ToString("HH:mm:ss");
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)

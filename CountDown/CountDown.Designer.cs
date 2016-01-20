@@ -67,9 +67,10 @@
             this.messageText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.messageText.Enabled = false;
             this.messageText.Font = new System.Drawing.Font("Meiryo", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageText.Location = new System.Drawing.Point(12, 619);
+            this.messageText.Location = new System.Drawing.Point(12, 676);
             this.messageText.Name = "messageText";
-            this.messageText.Size = new System.Drawing.Size(578, 289);
+            this.messageText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.messageText.Size = new System.Drawing.Size(578, 232);
             this.messageText.TabIndex = 2;
             this.messageText.Text = "";
             // 
